@@ -1,0 +1,14 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ entryTitle }} is not in the entries list.
+{% endblock %}
+
+{% block body %}
+    <h1>{{ entryTitle }}</h1>
+    <h4>is a new entry</h4>
+
+    <p> It looks like your entry doesn't exist. You can add by clicking on create new page on the menu bar</p>
+    <p> Click <a href="{% url 'newPage' %}">here</a> to create your new entry, thanks</p>
+
+{% endblock %}
